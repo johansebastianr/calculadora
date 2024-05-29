@@ -1,0 +1,9 @@
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#171717" /> <!-- Color del círculo -->
+    <size
+        android:width="65dp"
+        android:height="55dp"
+        /> <!-- Tamaño del botón -->
+</shape>

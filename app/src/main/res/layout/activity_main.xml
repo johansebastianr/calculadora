@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/DatosIngresados"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@drawable/border"
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:textColor="#8AC7C1"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/parentesis"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/botones"
+            android:text="()"
+            android:textSize="18sp"
+            android:textColor="#559535" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/porcentaje"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="%"
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#559535" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/division"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="/"
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#559535" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/borrar"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="C"
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#B3544F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nueve"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="9"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ocho"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="8"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/siete"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="7"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiplicar"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="x"
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#559535"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/seis"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="6"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cicno"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="5"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cuatro"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="4"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/restar"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="-"
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#559535"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tres"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="3"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dos"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="2"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uno"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="1"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sumar"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="+"
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#559535"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/opciones"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="M"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cero"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="0"
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/punto"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="."
+            android:background="@drawable/botones"
+            android:textColor="#EAEAEA"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/igualdad"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="="
+            android:textSize="18sp"
+            android:background="@drawable/botones"
+            android:textColor="#559535"/>
+    </LinearLayout>
+
+
+</LinearLayout>
