@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.parentesis.setOnClickListener { agregarParentesis() }
-        binding.porcentaje.setOnClickListener { agregarDatos("%") }
         binding.division.setOnClickListener { agregarDatos("/") }
         binding.borrar.setOnClickListener { binding.DatosIngresados.text.clear() }
         binding.multiplicar.setOnClickListener { agregarDatos("*") }
@@ -40,16 +38,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun agregarParentesis() {
-        val datos = binding.DatosIngresados.text.toString()
-
-        if ('(' !in datos) {
-            binding.DatosIngresados.append("(")
-        } else {
-            binding.DatosIngresados.append(")")
-        }
-    }
-
     private fun agregarDatos(texto: String) {
         binding.DatosIngresados.append(texto)
     }
@@ -66,7 +54,8 @@ class MainActivity : AppCompatActivity() {
 
         val datos = if (mostrar.isNotEmpty()) {
             try {
-                ExpressionBuilder(mostrar).build().evaluate().toString()
+                val resultado = evaluarExpresion(mostrar)
+                resultado.toString()
             } catch (e: Exception) {
                 "Error"
             }
@@ -75,4 +64,34 @@ class MainActivity : AppCompatActivity() {
         }
         binding.DatosIngresados.setText(datos)
     }
+
+    private fun evaluarExpresion(expresion: String): Double {
+        val operadores = "+-*/"
+        var numero = ""
+        var acumulador = 0.0
+        var operador = '+'
+
+        for (caracter in expresion) {
+            if (caracter in '0'..'9' || caracter == '.') {
+                numero += caracter
+            } else if (caracter in operadores) {
+                acumulador = calcular(acumulador, numero.toDouble(), operador)
+                operador = caracter
+                numero = ""
+            }
+        }
+        acumulador = calcular(acumulador, numero.toDouble(), operador)
+        return acumulador
+    }
+
+    private fun calcular(acumulador: Double, numero: Double, operador: Char): Double {
+        return when (operador) {
+            '+' -> acumulador + numero
+            '-' -> acumulador - numero
+            '*' -> acumulador * numero
+            '/' -> acumulador / numero
+            else -> throw IllegalArgumentException("Operador no válido")
+        }
+    }
+
 }

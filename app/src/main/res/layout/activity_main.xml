@@ -26,7 +26,7 @@
         android:padding="15dp"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
@@ -34,29 +34,16 @@
         android:padding="15dp">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/parentesis"
-            android:layout_width="65dp"
+            android:id="@+id/borrar"
+            android:layout_width="213dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/botones"
-            android:text="()"
-            android:textSize="18sp"
-            android:textColor="#559535" />
-
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/porcentaje"
-            android:layout_width="65dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="10dp"
-            android:text="%"
-            android:textSize="18sp"
-            android:background="@drawable/botones"
-            android:textColor="#559535" />
+            android:background="@drawable/eliminar"
+            android:text="C"
+            android:textColor="#B3544F"
+            android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/division"
@@ -65,22 +52,11 @@
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/botones"
             android:text="/"
-            android:textSize="18sp"
-            android:background="@drawable/botones"
-            android:textColor="#559535" />
+            android:textColor="#559535"
+            android:textSize="18sp"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/borrar"
-            android:layout_width="65dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="10dp"
-            android:text="C"
-            android:textSize="18sp"
-            android:background="@drawable/botones"
-            android:textColor="#B3544F" />
 
     </LinearLayout>
 

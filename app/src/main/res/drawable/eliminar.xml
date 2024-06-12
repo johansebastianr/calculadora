@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#171717" /> <!-- Color del rectángulo -->
+    <corners android:radius="15sp" /> <!-- Radio de las esquinas -->
+    <size
+        android:width="65dp"
+        android:height="55dp"
+        /> <!-- Tamaño del botón -->
+</shape>
